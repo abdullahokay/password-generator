@@ -1,0 +1,90 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Karla';
+    color: white;
+    font-weight: 800;
+}
+
+p {
+    color: #D5D4D8;
+    font-family: 'Inter';
+}
+
+span {
+    font-family: 'Inter';
+    color: #4ADF86;
+}
+
+input {
+    background-color: #273549;
+    color: #4ADF86;
+    border: none;
+}
+
+label {
+    font-family: 'Inter';
+    margin-bottom: 3px;
+    color: #D5D4D8;
+}
+
+i {
+    vertical-align: 0.5em !important;
+}
+
+button {
+    font-family: 'Inter';
+    background-color: #4ADF86;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 5px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    position: relative;
+}
+
+hr {
+    background-color: #2F3E53;
+    border: none;
+    height: 1px;
+}
+
+.container {
+    padding: 20px 30px;
+}
+
+.card {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.passwords {
+    display: flex;
+    flex-direction: column;
+}
+.password-1 {
+    justify-content: center;
+}
+.password {
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #273549;
+    display: inline-block;
+    width: 358px;
+    height: 20px;
+}
+

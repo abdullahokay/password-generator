@@ -23,25 +23,20 @@
           Please enter the number of characters you want<br/>in your password:
         </p>
         <input placeholder="default is 15" id="input-el" value="" />
-        <br />
-        <button style="margin-top: 15px" onclick="generatePassword()">
+        <br /><br />
+        <button id="generate-password-btn" style="margin-top: 15px">
           Generate Passwords
         </button>
         <hr style="color: #374151; margin-top: 15px" />
+        <br />
         <div class="passwords">
           <label>Password 1:</label>
-          <span id="first-password" class="password" onclick="copyFirstPassword()"></span>
+          <span id="first-password" class="password"></span>
           <label style="margin-top: 15px">Password 2:</label>
-          <span id="second-password" class="password" onclick="copySecondPassword()"></span>
+          <span id="second-password" class="password"></span>
         </div>
       </div>
     </div>
     <script src="index.js"></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

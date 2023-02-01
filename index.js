@@ -5,18 +5,17 @@ const characters = [
     "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"
 ];
 
-let passwordEls = document.querySelectorAll(".password")
+const generateBtn = document.getElementById("generate-password-btn")
+const inputEl = document.getElementById("input-el")
 let firstPasswordEl = document.getElementById("first-password")
 let secondPasswordEl = document.getElementById("second-password")
-let inputEl = document.getElementById("input-el")
-let firstCharacterIndex = 0
-let secondCharacterIndex = 0
-let copied = false
 
-function generatePassword()  {
+generateBtn.addEventListener("click", () => {
     firstPasswordEl.textContent = ""
     secondPasswordEl.textContent = ""
-    
+    let firstCharacterIndex = 0
+    let secondCharacterIndex = 0
+
     inputElValue = Number(inputEl.value)
     
     if(inputElValue === 0) {
@@ -38,9 +37,9 @@ function generatePassword()  {
             secondPasswordEl.textContent += characters[secondCharacterIndex]
         }
     }
-}
+})
 
-function copyFirstPassword() {
+firstPasswordEl.addEventListener("click", () => {
     let text = firstPasswordEl.textContent
     navigator.clipboard.writeText(text)
 
@@ -48,9 +47,9 @@ function copyFirstPassword() {
         alert("Password copied to clipboard")
     else
         alert("Password couldn't copied to clipboard")
-}
+})
 
-function copySecondPassword() {
+secondPasswordEl.addEventListener("click", () => {
     let text = secondPasswordEl.textContent
     navigator.clipboard.writeText(text)
 
@@ -58,5 +57,5 @@ function copySecondPassword() {
         alert("Password copied to clipboard")
     else
         alert("Password couldn't copied to clipboard")
-}
+})
 
